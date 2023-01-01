@@ -1,0 +1,15 @@
+[Unit]
+Description=A simple steam helper bot
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=steambot
+WorkingDirectory=/opt/steambot/
+ExecStart=/usr/bin/java -Dnogui=true -jar /opt/steambot/steambot-0.1.jar
+
+[Install]
+WantedBy=multi-user.target
