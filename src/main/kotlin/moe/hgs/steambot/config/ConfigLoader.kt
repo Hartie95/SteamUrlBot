@@ -8,6 +8,10 @@ object ConfigLoader {
     lateinit var botConfig: BotSettings
     private val serializer = Json { ignoreUnknownKeys = true }
 
+    init {
+        loadConfig()
+    }
+
     fun loadConfig() {
         val config = BotSettings.serializer()
         val file = File(configFile)

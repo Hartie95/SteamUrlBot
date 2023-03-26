@@ -1,0 +1,40 @@
+{
+  "name": "steam",
+  "description": "Posts the link as web and steam urls, steam workshop and store are supported",
+  "description_localizations" : {
+    "en-GB": "Posts the link as web and steam urls, steam workshop and store are supported",
+    "en-US": "Posts the link as web and steam urls, steam workshop and store are supported",
+    "de": "Veröffentlicht den Link als Web- und Steam-URLs, Steam Workshop und Store werden unterstützt",
+    "fr": "Publie le lien sous forme d'URL Web et Steam, l'atelier et le magasin sont pris en charge",
+    "es-ES": "Publica el enlace como URL web y de Steam, el taller de Steam y la tienda de Steam son compatibles",
+    "it": "Pubblica il link come URL web e Steam, l'officina Steam e il negozio Steam sono supportati",
+    "pt-BR": "Publica o link como URLs da web e do Steam, o workshop Steam e a loja Steam são suportados",
+    "ru": "Публикует ссылку как веб- и URL-адреса Steam, мастерская Steam и магазин Steam поддерживаются",
+    "ja": "リンクをWebとSteam URLとして投稿し、Steamワークショップとストアをサポートします",
+    "ko": "링크를 웹 및 스팀 URL로 게시하고 스팀 워크샵 및 스토어를 지원합니다",
+    "zh-CN": "将链接发布为Web和Steam URL，支持Steam工坊和Steam商店",
+    "zh-TW": "將連結發布為Web和Steam URL，支援Steam工坊和Steam商店"
+  },
+  "options": [
+    {
+      "name": "url",
+      "description": "Url in the steam:// or https:// format, steam workshop and steam store are supported",
+      "description_localizations": {
+        "en-GB": "Url in the steam:// or https:// format, steam workshop and steam store are supported",
+        "en-US": "Url in the steam:// or https:// format, steam workshop and steam store are supported",
+        "de": "URL im Format steam:// oder https://, Steam Workshop und Steam Store werden unterstützt",
+        "fr": "URL au format steam:// ou https://, l'atelier Steam et le magasin Steam sont pris en charge",
+        "es-ES": "URL en el formato steam:// o https://, el taller de Steam y la tienda de Steam son compatibles",
+        "it": "URL nel formato steam:// o https://, l'officina Steam e il negozio Steam sono supportati",
+        "pt-BR": "URL no formato steam:// ou https://, o workshop Steam e a loja Steam são suportados",
+        "ru": "URL в формате steam:// или https://, мастерская Steam и магазин Steam поддерживаются",
+        "ja": "steam://またはhttps://形式のURL、SteamワークショップとSteamストアがサポートされています",
+        "ko": "steam:// 또는 https:// 형식의 URL, 스팀 워크샵 및 스팀 스토어를 지원합니다",
+        "zh-CN": "以steam://或https://格式的URL，支持Steam工坊和Steam商店",
+        "zh-TW": "以steam://或https://格式的URL，支援Steam工坊和Steam商店"
+      },
+      "type": 3,
+      "required": true
+    }
+  ]
+}

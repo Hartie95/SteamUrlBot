@@ -1,0 +1,85 @@
+{
+  "name": "steamserver",
+  "description": "Posts the server address as steam connect url",
+  "description_localizations" : {
+    "en-GB": "Posts the server address as steam connect url",
+    "en-US": "Posts the server address as steam connect url",
+    "de": "Veröffentlicht die Serveradresse als Steam-Verbindungs-URL",
+    "fr": "Publie l'adresse du serveur sous forme d'URL de connexion Steam",
+    "es-ES": "Publica la dirección del servidor como URL de conexión de Steam",
+    "it": "Pubblica l'indirizzo del server come URL di connessione Steam",
+    "pt-BR": "Publica o endereço do servidor como URL de conexão Steam",
+    "ru": "Публикует адрес сервера как URL-адрес для подключения Steam",
+    "ja": "サーバーのアドレスをSteam接続URLとして投稿します",
+    "ko": "서버 주소를 스팀 연결 URL로 게시합니다",
+    "zh-CN": "将服务器地址发布为Steam连接URL",
+    "zh-TW": "將伺服器位址發佈為Steam連線網址",
+    "pl": "Publikuje adres serwera jako adres URL połączenia Steam",
+    "da": "Offentliggør serveradressen som Steam-forbindelses-URL",
+    "nl": "Plaatst het serveradres als Steam-verbinding-URL",
+    "no": "Publiser serveradressen som Steam-tilkoblings-URL",
+    "sv-SE": "Publicerar serveradressen som Steam-anslutnings-URL"
+  },
+  "options": [
+    {
+      "name": "address_port",
+      "description": "The server connection information in this format: [address]:[port]",
+      "description_localizations": {
+        "en-GB": "The server connection information in this format: [address]:[port]",
+        "en-US": "The server connection information in this format: [address]:[port]",
+        "de": "Die Serververbindungsinformationen in diesem Format: [Adresse]:[Port]",
+        "fr": "Les informations de connexion au serveur sous la forme: [adresse]:[port]",
+        "es-ES": "La información de conexión del servidor en este formato: [dirección]:[puerto]",
+        "it": "Le informazioni di connessione del server in questo formato: [indirizzo]:[porta]",
+        "pt-BR": "As informações de conexão do servidor neste formato: [endereço]:[porta]",
+        "ru": "Информация о подключении к серверу в этом формате: [адрес]:[порт]",
+        "ja": "この形式のサーバー接続情報：[アドレス]：[ポート]",
+        "ko": "이 형식의 서버 연결 정보 : [주소] : [포트]",
+        "zh-CN": "此格式的服务器连接信息：[地址]：[端口]",
+        "zh-TW": "此格式的伺服器連線資訊：[地址]：[連接埠]"
+      },
+      "type": 3,
+      "required": true
+    },
+    {
+      "name": "port",
+      "description": "The servers port",
+      "description_localizations": {
+        "en-GB": "The server connection information in this format: [address]:[port]",
+        "en-US": "The server connection information in this format: [address]:[port]",
+        "de": "Die Serververbindungsinformationen in diesem Format: [Adresse]:[Port]",
+        "fr": "Les informations de connexion au serveur sous la forme: [adresse]:[port]",
+        "es-ES": "La información de conexión del servidor en este formato: [dirección]:[puerto]",
+        "it": "Le informazioni di connessione del server in questo formato: [indirizzo]:[porta]",
+        "pt-BR": "As informações de conexão do servidor neste formato: [endereço]:[porta]",
+        "ru": "Информация о подключении к серверу в этом формате: [адрес]:[порт]",
+        "ja": "この形式のサーバー接続情報：[アドレス]：[ポート]",
+        "ko": "이 형식의 서버 연결 정보 : [주소] : [포트]",
+        "zh-CN": "此格式的服务器连接信息：[地址]：[端口]",
+        "zh-TW": "此格式的伺服器連線資訊：[地址]：[連接埠]"
+      },
+      "type": 4,
+      "required": false
+    },
+    {
+      "name": "server_password",
+      "description": "Password for the server, if any",
+      "description_localizations" : {
+        "en-GB": "Password for the server, if any",
+        "en-US": "Password for the server, if any",
+        "de": "Passwort für den Server, falls vorhanden",
+        "fr": "Mot de passe du serveur, s'il y en a un",
+        "es-ES": "Contraseña para el servidor, si la hay",
+        "it": "Password per il server, se presente",
+        "pt-BR": "Senha para o servidor, se houver",
+        "ru": "Пароль для сервера, если есть",
+        "ja": "サーバーのパスワード（あれば）",
+        "ko": "서버 비밀번호 (있는 경우)",
+        "zh-CN": "服务器密码（如果有的话）",
+        "zh-TW": "伺服器密碼（如果有的話）"
+      },
+      "type": 3,
+      "required": false
+    }
+  ]
+}
