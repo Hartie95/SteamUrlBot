@@ -5,5 +5,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class AppDetailResult(
     val success: Boolean,
-    val data: AppDetails
+    val data: AppDetails? = null
 )

@@ -11,7 +11,7 @@ data class AppDetails(
     val steamAppId: Int,
     @SerialName("header_image")
     val headerImage: String,
-    val website: String,
+    val website: String? = null,
     @SerialName("short_description")
     val shortDescription: String,
     @SerialName("detailed_description")
@@ -23,8 +23,10 @@ data class AppDetails(
     val developers: List<String>,
     val publishers: List<String>,
     @SerialName("price_overview")
-    val priceOverview: PriceOverview,
-    val packages: List<Int>,
+    val priceOverview: PriceOverview?= null,
+    @SerialName("is_free")
+    val isFree: Boolean = false,
+    val packages: List<Int>? = null,
     val platforms: Platforms,
     val categories: List<Category>,
     val genres: List<Genre>,
@@ -34,5 +36,5 @@ data class AppDetails(
     val achievements: Achievements? = null,
     @SerialName("release_date")
     val releaseDate: ReleaseDate,
-    val background: String
+    val background: String? = null
 )

@@ -61,6 +61,14 @@ class SteamUriCommandHandler : CommandHandler("steamUriCommand.json") {
         return platformsList.joinToString(", ")
     }
 
+    fun getPriceString(appDetails: AppDetails): String {
+        return if(appDetails.isFree){
+            "Free"
+        } else {
+            appDetails.priceOverview?.finalFormatted ?: "Unknown"
+        }
+    }
+
     fun buildStoreEmbed(appDetails: AppDetails, outputUrls: Map<UrlGoal, String>): EmbedCreateSpec {
         val builder = EmbedCreateSpec.builder()
             .title(appDetails.name)
@@ -69,7 +77,7 @@ class SteamUriCommandHandler : CommandHandler("steamUriCommand.json") {
             .addField("Publishers", appDetails.publishers.joinToString(", "), true)
             .addField("Developers", appDetails.developers.joinToString(", "), true)
             .addField("Release Date", appDetails.releaseDate.date, true)
-            .addField("Price", appDetails.priceOverview.finalFormatted, true)
+            .addField("Price", getPriceString(appDetails), true)
             .addField("Platforms", getPlatformsString(appDetails.platforms), true)
 
         appDetails.recommendations?.let {
